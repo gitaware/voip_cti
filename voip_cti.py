@@ -92,7 +92,7 @@ class MainWindow(QMainWindow):
     layout = QVBoxLayout()
 
     logo = QLabel(self)
-    pixmap = QPixmap('Telforce_logo_v1.png')
+    pixmap = QPixmap('media/Telforce_logo_v1.png')
     logo.setPixmap(pixmap)
 
     label = QLabel("VoIP CTI 1.0\nComputer ID: %s" %(computer_id) )
@@ -115,7 +115,7 @@ if __name__ == "__main__":
   app.setQuitOnLastWindowClosed(False)
 
   # Create the icon
-  icon = QIcon("telephone-handset.png")
+  icon = QIcon("media/telephone-handset.png")
 
   # Create the tray
   tray = QSystemTrayIcon()
