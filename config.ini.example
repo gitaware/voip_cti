@@ -1,0 +1,14 @@
+[voip]
+host = sip.server.com
+port = 5060
+user = 1234
+password = supersecretpassword
+
+[action_exec]
+exec = 'ls'
+arguments = ['from', 'to']
+
+[action_webhook]
+enabled = false
+url = 'https://api.server.com/api/endpoint'
+method = 'GET'
