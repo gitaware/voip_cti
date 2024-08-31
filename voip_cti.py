@@ -34,7 +34,7 @@ for adapter in adapters:
         #print("   %s/%s" % (ip.ip, ip.network_prefix))
 
 def download_config(computer_id):
-  res = requests.get('https://cloudaware.eu/'+computer_id+'.ini')
+  res = requests.get('https://provisioningserver.com/folder/'+computer_id+'.ini')
   if res.status_code == 200:
     print("Downloading new config!")
     with open('config.ini', 'w') as file:
